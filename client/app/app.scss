@@ -2,6 +2,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 @import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 $fa-font-path: "../bower_components/font-awesome/fonts";
 @import '../bower_components/font-awesome/scss/font-awesome';
+@import '../assets/porto/stylesheets/sass/theme.scss';
 
 /**
  * App-wide Styles
@@ -19,4 +20,5 @@ $fa-font-path: "../bower_components/font-awesome/fonts";
 @import 'admin/admin.scss';
 @import 'main/main.scss';
 @import '../components/footer/footer.scss';
+@import '../components/porto-sidebar/porto-sidebar.scss';
 /* endinject */

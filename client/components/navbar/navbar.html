@@ -1,5 +1,6 @@
 <div class="navbar navbar-default navbar-static-top" ng-controller="NavbarController">
   <div class="container">
+
     <div class="navbar-header">
       <button class="navbar-toggle" type="button" ng-click="nav.isCollapsed = !nav.isCollapsed">
         <span class="sr-only">Toggle navigation</span>
@@ -9,12 +10,14 @@
       </button>
       <a href="/" class="navbar-brand">mean-fullstack</a>
     </div>
+
     <div uib-collapse="nav.isCollapsed" class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
         <li ng-repeat="item in nav.menu" ui-sref-active="active">
             <a ui-sref="{{item.state}}">{{item.title}}</a>
         </li>
         <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="admin">Admin</a></li>
+        <li ng-show="nav.isAdmin()" ui-sref-active="active"><a ui-sref="dashboard">Dashboard</a></li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
@@ -25,5 +28,6 @@
         <li ng-show="nav.isLoggedIn()"><a ui-sref="logout">Logout</a></li>
       </ul>
     </div>
+
   </div>
 </div>

@@ -1,23 +1,29 @@
+// register SCSS files for Porto
+@import "../assets/porto/stylesheets/sass/theme.scss";
+@import "../assets/porto/stylesheets/sass/theme-custom.scss";
+@import "../assets/porto/stylesheets/sass/theme-admin-extension.scss";
+@import "../assets/porto/stylesheets/sass/skins/_dark.scss";
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
-@import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
+@import "../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap";
 $fa-font-path: "../bower_components/font-awesome/fonts";
-@import '../bower_components/font-awesome/scss/font-awesome';
-@import '../assets/porto/stylesheets/sass/theme.scss';
+@import "../bower_components/font-awesome/scss/font-awesome";
 
 /**
  * App-wide Styles
  */
 
 .browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+    padding: .2em 0;
+    margin: .2em 0;
+
+    color: #000;
+    background: #ccc;
 }
 
 // Component styles are injected through grunt
 /* inject:scss */
 @import 'admin/admin.scss';
+@import 'dashboard/dashboard.scss';
 @import 'main/main.scss';
 @import '../components/footer/footer.scss';
 @import '../components/porto-sidebar/porto-sidebar.scss';

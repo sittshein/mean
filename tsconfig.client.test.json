@@ -9,8 +9,10 @@
         "client/test_typings/**/*.d.ts"
     ],
     "files": [
-        "client/app/header/header.directive.spec.ts",
+        "client/app/dashboard/dashboard.controller.spec.ts",
         "client/app/main/main.controller.spec.ts",
+        "client/components/porto-sidebar/porto-sidebar.controller.spec.ts",
+        "client/components/porto-sidebar/porto-sidebar.directive.spec.ts",
         "client/components/socket/socket.mock.ts",
         "client/components/ui-router/ui-router.mock.ts"
     ]

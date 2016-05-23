@@ -1,19 +1,14 @@
-'use strict';
+(function () {
+  'use strict';
 
-angular.module('meanFullstackApp', [
-  'meanFullstackApp.auth',
-  'meanFullstackApp.admin',
-  'meanFullstackApp.constants',
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
-  'btford.socket-io',
-  'ui.router',
-  'validation.match'
-])
-  .config(function($urlRouterProvider, $locationProvider) {
-    $urlRouterProvider
-      .otherwise('/');
+  var module = angular.module('meanFullstackApp', [
+    'ngComponentRouter'
+  ]);
 
-    $locationProvider.html5Mode(true);
-  });
+  module.value('$routerRootComponent', 'appMainComponent');
+
+  module.config(function($locationProvider) {
+      $locationProvider.html5Mode(true);
+    });
+
+})(); 

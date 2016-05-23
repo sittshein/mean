@@ -1,108 +1,100 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="fixed">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <base href="/">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(client) app/vendor.css -->
-      <!-- bower:css -->
-      <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css({.tmp,client}) app/app.css -->
-      <link rel="stylesheet" href="app/app.css">
-      <!-- injector:css -->
-      <!-- endinjector -->
-    <!-- endbuild -->
+
+    <!-- Basic -->
+    <meta charset="UTF-8">
+
+    <title>Dashboard | Porto Admin - Responsive HTML5 Template 1.5.2</title>
+    <meta name="keywords" content="HTML5 Admin Template" />
+    <meta name="description" content="Porto Admin - Responsive HTML5 Template">
+    <meta name="author" content="okler.net">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Web Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/vendor/magnific-popup/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css" />
+
+    <!-- Specific Page Vendor CSS -->
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" href="assets/vendor/jquery-ui/jquery-ui.theme.css" />
+    <link rel="stylesheet" href="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.css" />
+    <link rel="stylesheet" href="assets/vendor/morris.js/morris.css" />
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="assets/stylesheets/theme.css" />
+
+    <!-- Skin CSS -->
+    <link rel="stylesheet" href="assets/stylesheets/skins/default.css" />
+
+    <!-- Theme Custom CSS -->
+    <link rel="stylesheet" href="assets/stylesheets/theme-custom.css">
+
+    <!-- Head Libs -->
+    <script src="assets/vendor/modernizr/modernizr.js"></script>
+
+
   </head>
   <body ng-app="meanFullstackApp">
-    <!--[if lt IE 7]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <navbar></navbar>
-    <div ui-view=""></div>
-    <footer></footer>
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-XXXXX-X');
-      ga('send', 'pageview');
-    </script>
-
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
-    <!-- build:js({client,node_modules}) app/vendor.js -->
-      <!-- bower:js -->
-      <script src="bower_components/jquery/dist/jquery.js"></script>
-      <script src="bower_components/angular/angular.js"></script>
-      <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-      <script src="bower_components/angular-resource/angular-resource.js"></script>
-      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
-      <script src="bower_components/angular-socket-io/socket.js"></script>
-      <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-      <script src="bower_components/angular-validation-match/dist/angular-validation-match.min.js"></script>
-      <!-- endbower -->
-      <script src="socket.io-client/socket.io.js"></script>
-    <!-- endbuild -->
-    <!-- build:js({.tmp,client}) app/app.js -->
-      <script src="app/app.js"></script>
-      <!-- injector:js -->
-      <script src="app/admin/admin.module.js"></script>
-      <script src="components/auth/auth.module.js"></script>
-      <script src="components/util/util.module.js"></script>
-      <script src="components/auth/interceptor.service.js"></script>
-      <script src="app/admin/admin.controller.js"></script>
-      <script src="app/account/account.js"></script>
-      <script src="app/admin/admin.router.js"></script>
-      <script src="app/dashboard/dashboard.controller.js"></script>
-      <script src="app/dashboard/dashboard.js"></script>
-      <script src="app/main/main.controller.js"></script>
-      <script src="app/main/main.js"></script>
-      <script src="app/account/settings/settings.controller.js"></script>
-      <script src="components/auth/auth.service.js"></script>
-      <script src="app/account/login/login.controller.js"></script>
-      <script src="components/auth/router.decorator.js"></script>
-      <script src="components/auth/user.service.js"></script>
-      <script src="components/footer/footer.directive.js"></script>
-      <script src="components/mongoose-error/mongoose-error.directive.js"></script>
-      <script src="components/navbar/navbar.controller.js"></script>
-      <script src="components/navbar/navbar.directive.js"></script>
-      <script src="components/porto-sidebar/porto-sidebar.controller.js"></script>
-      <script src="components/porto-sidebar/porto-sidebar.directive.js"></script>
-      <script src="components/socket/socket.service.js"></script>
-      <script src="app/account/signup/signup.controller.js"></script>
-      <script src="components/util/util.service.js"></script>
-      <script src="app/app.constant.js"></script>
-      <!-- endinjector -->
-    <!-- endbuild -->
-
-        <!-- Theme Base, Components and Settings -->
-    <script src="assets/porto/javascripts/theme.js"></script>
+    <app-main-component></app-main-component>
     
-    <!-- Theme Custom -->
-    <script src="assets/porto/javascripts/theme.custom.js"></script>
-    
-    <!-- Theme Initialization Files -->
-    <script src="assets/porto/javascripts/theme.init.js"></script>
 
-    <!-- Examples -->
-    <script src="assets/porto/javascripts/dashboard/examples.dashboard.js"></script>
+    <!-- Vendor -->
+    <script src="assets/vendor/jquery/jquery.js"></script>
+    <script src="assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/vendor/nanoscroller/nanoscroller.js"></script>
+    <script src="assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <script src="assets/vendor/magnific-popup/jquery.magnific-popup.js"></script>
+    <script src="assets/vendor/jquery-placeholder/jquery-placeholder.js"></script>
+    
+    <!-- Specific Page Vendor -->
+    <script src="assets/vendor/jquery-ui/jquery-ui.js"></script>
+    <script src="assets/vendor/jqueryui-touch-punch/jqueryui-touch-punch.js"></script>
+    <script src="assets/vendor/jquery-appear/jquery-appear.js"></script>
+    <script src="assets/vendor/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+    <script src="assets/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.js"></script>
+    <script src="assets/vendor/flot.tooltip/flot.tooltip.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.pie.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.categories.js"></script>
+    <script src="assets/vendor/flot/jquery.flot.resize.js"></script>
+    <script src="assets/vendor/jquery-sparkline/jquery-sparkline.js"></script>
+    <script src="assets/vendor/raphael/raphael.js"></script>
+    <script src="assets/vendor/morris.js/morris.js"></script>
+    <script src="assets/vendor/gauge/gauge.js"></script>
+    <script src="assets/vendor/snap.svg/snap.svg.js"></script>
+    <script src="assets/vendor/liquid-meter/liquid.meter.js"></script>
+    <script src="assets/vendor/jqvmap/jquery.vmap.js"></script>
+    <script src="assets/vendor/jqvmap/data/jquery.vmap.sampledata.js"></script>
+    <script src="assets/vendor/jqvmap/maps/jquery.vmap.world.js"></script>
+    <script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.africa.js"></script>
+    <script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.asia.js"></script>
+    <script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.australia.js"></script>
+    <script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.europe.js"></script>
+    <script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.north-america.js"></script>
+    <script src="assets/vendor/jqvmap/maps/continents/jquery.vmap.south-america.js"></script>
+    
+
+
+    <!-- bower-components:js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-component-router/angular_1_router.js"></script>
+    <!-- angular js -->
+    <script src="app/app.js"></script>
+    <script src="app/app-main-component.js"></script>
+    <script src="components/header/header-component.js"></script>
+    <script src="components/dashboard/dashboard-component.js"></script>
+    <script src="components/sidebar/sidebar-left-component.js"></script>
+    <script src="components/sidebar/sidebar-right-component.js"></script>
+
   </body>
 </html>

@@ -18,12 +18,11 @@
       "ts": true,
       "flow": false,
       "html": true,
-      "sass": true,
+      "css": true,
       "uirouter": true,
       "bootstrap": true,
       "uibootstrap": false,
       "socketio": true,
-      "auth": true,
       "models": true,
       "mongooseModels": true,
       "mongoose": true,
@@ -54,7 +53,7 @@
       "ts",
       "js",
       "html",
-      "scss"
+      "css"
     ],
     "directiveSimpleTemplates": "",
     "directiveComplexTemplates": "",
